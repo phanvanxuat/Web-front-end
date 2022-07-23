@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* .none {
+            display: none;
+        }
+        
+        #toggle {
+            display: none;
+        } */
+        
+        .te {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="toggle">Click vao day</label>
+            <!-- <input type="checkbox" id="toggle" /> -->
+            <div class="none" style="background-color: red; width: 200; height: 100px">
+                <menu>1</menu>
+                <menu>1</menu>
+                <menu>1</menu>
+            </div>
+            <div>ddd</div>
+            <script>
+                var test = document.querySelector(".toggle");
+                test.onclick = function() {
+                    var t = document.querySelector('.none')
+                    t.style.display = 'none'
+                        // t.style.display = 'block'
+                        // document.querySelector('.none').style.display = "none";
+                        // document.querySelector('.none').style.display = "block";
+                    this.classList.remove('t')
+                        // this.classList.add()
+
+                };
+            </script>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+/* Tablet Pro */
+
+@media (min-width: 1024px) and (max-width: 1239px) {}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container-sub {
+        width: 80%;
+    }
+    .container-text {
+        font-size: 30px;
+    }
+    .container-montg {
+        font-size: 12px;
+    }
+    .container-note {
+        font-size: 12px;
+        line-height: 28px;
+    }
+}
+
+
+/* Tablet va mobile */
+
+@media (max-width: 1023px) {}
+
+
+/* MOBILE */
+
+@media (max-width: 739px) {
+    .banner-hilight {
+        font-size: 30px;
+    }
+    .container-content-text-sub-1 a {
+        font-size: 20px;
+    }
+    .container-content-text-sub {
+        font-size: 11px;
+    }
+    .container-2-img-text a {
+        margin-left: 12px;
+    }
+    .content-relave-to span {
+        font-size: 15px;
+    }
+    .container-content-ul {
+        margin-top: 12px;
+    }
+    .container-2-img-text {
+        font-size: 14px;
+    }
+    .footer-social h3 {
+        font-size: 17px;
+    }
+    .footer-social-text-sub {
+        font-size: 12px;
+    }
+    .copyright h3 {
+        font-size: 17px;
+    }
+    .container-1-text {
+        font-size: 17px;
+    }
+    .container-sub {
+        padding-left: 20px;
+        width: 80%;
+    }
+    .container-text {
+        font-size: 28px;
+    }
+    .container-montg {
+        font-size: 10px;
+    }
+    .container-note {
+        font-size: 12px;
+        line-height: 28px;
+    }
+    .container-text-right {
+        padding-left: 20px;
+    }
+}

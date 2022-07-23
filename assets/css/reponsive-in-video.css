@@ -1,0 +1,54 @@
+/* Tablet Pro */
+
+@media (min-width: 1024px) and (max-width: 1239px) {}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* .main {
+        overflow: hidden;
+    } */
+    .content-text {
+        padding-left: 16px;
+        display: block;
+        justify-content: flex-end;
+    }
+    .content-text i {
+        display: block;
+    }
+    .content-sub {
+        margin-right: 12px;
+    }
+}
+
+
+/* Tablet va mobile */
+
+@media (max-width: 1023px) {}
+
+
+/* MOBILE */
+
+@media (max-width: 739px) {
+    .describe {
+        overflow-x: auto;
+    }
+    .describe::-webkit-resizer {
+        height: 55px;
+    }
+    .describe::-webkit-scrollbar {
+        height: 1px;
+        width: 4px;
+    }
+    .describe::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #999;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+    .describe::-webkit-scrollbar-track {
+        /* display: none; */
+        -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+        background: #fff;
+    }
+}

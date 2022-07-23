@@ -1,0 +1,576 @@
+.main {
+    background-color: #000;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    /* background-image: url(/assets/img/VIETNAM.png); */
+    /* padding-top: 50%;
+    background-image: url(/assets/img/anh1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; */
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+    height: 14rem;
+    width: 14rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 10%;
+    left: 4%;
+}
+
+.circle2 {
+    top: 35%;
+    right: 6%;
+}
+
+.header {
+    height: 31px;
+    background: #2e7d32;
+}
+
+.header-main {
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main-text {
+    display: flex;
+    list-style: none;
+}
+
+.header-main-text-2 {
+    display: flex;
+}
+
+.header-main-text-sub {
+    position: relative;
+    z-index: 12;
+    font-size: 1.6rem;
+    padding: 0 12px;
+    display: flex;
+}
+
+.header-main-text-sub:hover .qrcode {
+    display: block;
+}
+
+
+/* Header qr code */
+
+.header__qr {
+    background-color: #fff;
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 91%;
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    /* animation: fadeIn ease-in 1s; */
+    z-index: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    /* display none là ẩn qrcode */
+    /* animation là kiểu chuyển động khi rê chuột vào qr code nó hiện dần dần lên */
+}
+
+.header__qr::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: -16px;
+    background-color: transparent;
+}
+
+.header__qr-img {
+    width: 100%;
+    /* tức là nó nằm gọn trong header__qr */
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__qr-link:first-child {
+    margin-left: 10px;
+}
+
+.header__qr-link:first-child {
+    margin-right: 10px;
+}
+
+.header__qr-download-img {
+    height: 15px;
+}
+
+.header-main-text-sub:hover .header__qr {
+    /* những css viết trong hover nó sẽ được úp lai vào header__qr hoặc
+    header__qr là con của header__navbar-item--has-qr */
+    display: block;
+    /* display: rê chuột vào là block nó sẽ hiện ra mã qr code */
+}
+
+.header-main-text-link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.facebook {
+    /* color: #0d8cf0; */
+}
+
+.web-header {
+    z-index: 10;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.web-header-1 {
+    background-color: rgb(202, 39, 153);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {}
+
+.logo-1 {
+    margin-top: 12px;
+    width: 200px;
+    height: 50px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-1 {
+    position: relative;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    user-select: none;
+    color: #999;
+    pointer-events: none;
+}
+
+.search::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 110px;
+    top: 0px;
+    width: 178px;
+    height: 11px;
+    background-color: rgb(202, 39, 153);
+    z-index: 2;
+}
+
+
+/* Plahoder shown: Luôn để sát gần ô input focus */
+
+.search-1:not(:placeholder-shown)+.form-label,
+.search-1:focus+.form-label {
+    top: 21px;
+    padding: 1px 0;
+    display: inline-block;
+    background-color: white;
+}
+
+.search-1:focus {
+    border-color: red !important;
+}
+
+.link-search {
+    padding: 16px 20px;
+    position: absolute;
+    right: 0px;
+}
+
+.icon-search {
+    font-size: 1.6rem;
+}
+
+.text-main {}
+
+.text-main-1 {
+    line-height: 71px;
+    list-style: none;
+    display: flex;
+}
+
+.text-main-sub {}
+
+.text-main-sub-link:hover {
+    background: linear-gradient(180deg, #b9db20, #fd6032);
+}
+
+.text-main-sub-link {
+    padding: 12px 8px;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+
+/* Bannner */
+
+.img {
+    overflow: hidden;
+}
+
+.img-all {
+    display: flex;
+}
+
+.img1 {
+    z-index: 2;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50%;
+    background-image: url(/assets/img/xephang.png);
+    flex: 0 0 100%;
+}
+
+.img2 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50%;
+    flex: 0 0 100%;
+    background-image: url(/assets/img/ngoaihang.jpg);
+}
+
+#for-nav1,
+#for-nav2,
+#for-nav3 {
+    width: 100%;
+}
+
+.checkeds {
+    display: flex;
+    justify-content: center;
+}
+
+.checkeds label {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 3px solid red;
+}
+
+.checkeds label:hover {
+    background-color: thistle;
+}
+
+#for-nav1,
+#for-nav2,
+#for-nav3 {
+    display: none;
+}
+
+#for-nav1:checked~.img1 {
+    margin-left: -100%;
+}
+
+#for-nav2:checked~.img2 {
+    margin-left: -200%;
+}
+
+#for-nav3:checked~.img3 {
+    margin-left: -300%;
+}
+
+.banner-text:hover {
+    transform: scale(1.2);
+}
+
+
+/* Container */
+
+.popular {
+    margin: 30px 0;
+}
+
+.popular-1 {
+    margin-top: 76px;
+    margin-bottom: 19px;
+}
+
+.container-hignlight-1 {
+    border-radius: 13px;
+    height: 105px;
+    background-color: rgb(84 156 111);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.container-hignlight {
+    /* background-color: rgb(22, 21, 21); */
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.danang-img img {
+    width: 60px;
+}
+
+.danang h2,
+.longan h2 {
+    color: var(--text-color);
+}
+
+.danang-img {
+    text-align: center;
+}
+
+.danang,
+.longan {
+    font-size: 20px;
+}
+
+.danang,
+.longan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-text-sub {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.container-text-1 {
+    font-size: 13px;
+}
+
+.time {
+    width: 30px;
+    border-radius: 4px;
+    background-color: red;
+    color: var(--text-color);
+}
+
+.container-text-1 p {
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.container-text-sub-button {
+    position: relative;
+    text-align: center;
+}
+
+.container-text-sub-button:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.container-text-sub-button:hover:after {
+    transition-duration: 0.2s;
+    border-bottom: 20px solid black;
+    border-left: 20px solid #549c6f;
+}
+
+.click-view {
+    font-size: 17px;
+    color: var(--text-color);
+    padding: 16px 31px;
+    text-decoration: none;
+}
+
+.container-text-sub-button button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(146, 34, 156), rgb(124, 192, 15));
+}
+
+.hignlight {
+    transform: scale(1);
+    transition-duration: 2s;
+    /* Safari & Google Chrome */
+    -webkit-transition-duration: 2s;
+    /* Mozilla Firefox */
+    -moz-transition-duration: 2s;
+    /* Opera */
+    -o-transition-duration: 2s;
+    /* IE 9 */
+    -ms-transition-duration: 2s;
+}
+
+.hignlight:hover {
+    transform: scale(2);
+    /* Safari & Google Chrome */
+    -webkit-transform: scale(1.2);
+    /* Mozilla Firefox */
+    -moz-transform: scale(1.2);
+    /* Opera */
+    -o-transform: scale(1.2);
+    /* IE 9 */
+    -ms-transform: scale(1.2);
+    cursor: pointer;
+}
+
+.popular-1 h1 {
+    font-size: 40px;
+}
+
+.popular h1 {
+    font-size: 40px;
+}
+
+.top-1 {
+    margin-top: 23px;
+}
+
+
+/* Slide */
+
+.center {
+    margin: 12px 0;
+}
+
+.center img {
+    width: 100%;
+}
+
+
+/* footer */
+
+.footer-all {
+    padding: 25px 12px;
+    background-color: #000;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poppular-post {
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 237px;
+}
+
+.footer-text-sub {
+    text-align: justify;
+    color: var(--text-color);
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.footer-phone-text {
+    color: var(--text-color);
+    font-size: 1.7rem;
+}
+
+.dmca {
+    text-align: center;
+}
+
+.footer-partner {
+    font-size: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer-color {
+    min-height: 300px;
+}
+
+.footer-partner-img {
+    text-align: center;
+}
+
+.partner-img-sub {
+    width: 50px;
+}
+
+.popular-post-1 {
+    display: flex;
+    padding: 12px 0;
+}
+
+.popular-post-1 img {
+    width: 138px;
+    padding: 0 11px 0 0;
+}
+
+.popular-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+
+/* end */
+
+.license-text {
+    font-size: 19px;
+    line-height: 20px;
+    background: #c8bfb794;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.license-text-1 a {
+    color: var(--text-color);
+}
+
+.license-text-ul {
+    padding: 0 12px;
+    list-style: none;
+    display: flex;
+}
+
+.license-text-ul-sub {
+    padding: 0 12px;
+}
+
+.license-text-ul-sub a {
+    color: var(--text-color);
+    text-decoration: none;
+}

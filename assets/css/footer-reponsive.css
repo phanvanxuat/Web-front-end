@@ -1,0 +1,26 @@
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .footer-social {
+        justify-content: flex-start;
+    }
+}
+
+
+/* Tablet va mobile */
+
+@media (max-width: 1023px) {}
+
+
+/* MOBILE */
+
+@media (max-width: 739px) {
+    .footer-social {
+        padding-left: 12px;
+        justify-content: flex-start;
+    }
+    .copyright {
+        padding-left: 12px;
+        line-height: 2.2rem;
+    }
+}

@@ -1,0 +1,138 @@
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .icon-network-sub {
+        padding: 0 54px;
+    }
+}
+
+
+/* Tablet va mobile */
+
+@media (max-width: 1023px) {
+    .phone {
+        font-size: 40px;
+        color: var(--text-color);
+    }
+    .twitter {
+        width: unset;
+        background: unset;
+    }
+    .facebook {
+        width: unset;
+    }
+    .link {
+        width: unset;
+    }
+    .gmail {
+        width: unset;
+        position: unset;
+        color: #fff;
+    }
+    .gmail-last {
+        display: none;
+    }
+    .icon-network-sub:nth-child(1) {
+        background-color: #16d032;
+    }
+    .icon-network-sub:nth-child(1):hover {
+        background-color: #ff2882;
+    }
+    .icon-network-sub:nth-child(2) {
+        background-color: #00aced;
+    }
+    .icon-network-sub:nth-child(2):hover {
+        background-color: #fff;
+    }
+    .twitter:hover {
+        color: #00aced;
+    }
+    .icon-network-sub:nth-child(3) {
+        background-color: #3b5998;
+    }
+    .icon-network-sub:nth-child(3):hover {
+        background-color: #fff;
+        color: #3b5998;
+    }
+    .icon-network-sub:nth-child(4) {
+        background-color: #37003c;
+    }
+    .icon-network-sub:nth-child(5) {
+        /* background-color: red; */
+    }
+    .icon-network-sub:nth-child(5):hover {
+        background-color: #ff2882;
+        color: #ff2882;
+    }
+    .icon-tablet-mobile {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+    }
+    .icon-network {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 739px) {
+    .banner-hilight {
+        font-size: 20px;
+    }
+    .racist-banner-left {
+        width: 100%;
+    }
+    .racist-banner-right {
+        display: none;
+    }
+    .racist-banner-img-possiton {
+        font-size: 18px;
+    }
+    .content-text-item {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .content-text-item-sub {
+        padding-bottom: 12px;
+    }
+    .footer-social h3 {
+        font-size: 17px;
+    }
+    .footer-social-text-sub {
+        font-size: 12px;
+    }
+    .copyright h3 {
+        font-size: 17px;
+    }
+    .container-1-text {
+        font-size: 17px;
+    }
+    .icon-network-sub {
+        padding: 0 14px;
+    }
+    /* .icon-network {
+        background: #ff2882;
+    } */
+    .content-text-table {
+        flex-wrap: wrap;
+    }
+    .content-text-33 {
+        width: 100%;
+        padding: 16px 0px;
+    }
+    .content-text-33:last-child {
+        border-right: 1px solid;
+    }
+    .col {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+}

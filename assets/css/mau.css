@@ -1,0 +1,18 @@
+/* Tablet Pro */
+
+@media (min-width: 1024px) and (max-width: 1239px) {}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+
+/* Tablet va mobile */
+
+@media (max-width: 1023px) {}
+
+
+/* MOBILE */
+
+@media (max-width: 739px) {}
